@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="app.component.css">
+<style>#grad1 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,176,69,1) 90%);
+}</style>
+
+<div id="grad1">
+<div class="container"></div>
+
+    <h3 class="d-flex justify-content-center">Angular10, Web API, SQL server App Demo</h3>
+    <h5 class="d-flex justify-content-center">Employee Mamagemnt Portal</h5>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <button routerLink="department"
+            class="m-1 btn btn-light btn-outline-warning" Button>Departments</button>
+
+        </li>
+        <li class="nav-item">
+          <button routerLink="employee"
+          class="m-1 btn btn-light btn-outline-info" Button>Employee</button>
+
+        </li>
+
+      </ul>
+
+    </nav>
+<br>
+
+
+<router-outlet></router-outlet>
+</div>
